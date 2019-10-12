@@ -1,0 +1,35 @@
+section {
+    padding-top: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    max-width: 100%;
+}
+
+#navButton {
+    top: 0;
+    right: 0;
+}
+
+.navbar-default {
+    max-width: 100%;
+}
+
+#animatedstar {
+    z-index: -1000;
+    opacity: 0.1;
+    width: 90%;
+    transform: rotate(-90deg);
+    position: absolute;
+    height: auto;
+}
+
+.tile-bg {
+    background-color: orange;
+    opacity: 0.1;
+}
