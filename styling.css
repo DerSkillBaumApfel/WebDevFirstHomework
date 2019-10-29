@@ -1,5 +1,9 @@
 section {
-    padding-top: 60px;
+    padding-top: 8vh;
+}
+
+.navHeightSetting {
+    height: 8vh !important;
 }
 
 html {
@@ -20,16 +24,37 @@ body {
     max-width: 100%;
 }
 
-#animatedstar {
+.backgroundimage {
     z-index: -1000;
     opacity: 0.1;
-    width: 90%;
-    transform: rotate(-90deg);
     position: absolute;
-    height: auto;
 }
 
-.tile-bg {
-    background-color: orange;
-    opacity: 0.1;
+#animatedstar {
+    height: auto;
+    transform: rotate(-90deg);
+    max-width: 90%;
+}
+
+.carousel-inner>.carousel-item>img {
+    margin: auto;
+    height: 100%
+}
+
+#bumbotron {
+    background-image: url(./assets/bumbo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.bg-bumbotron {
+    background: rgba(68, 68, 68, 0.6);
+}
+
+.bootstrapbg {
+    /* background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url("https://getbootstrap.com/docs/4.2/assets/brand/bootstrap-solid.svg") no-repeat center center; */
+    /* background-size: 20%; */
+    background-color: rgb(255, 169, 39);
+    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9));
 }
