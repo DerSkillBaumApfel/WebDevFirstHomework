@@ -1,5 +1,10 @@
 section {
     padding-top: 8vh;
+    padding-bottom: 0;
+}
+
+h2 {
+    padding-top: 8vh;
 }
 
 .navHeightSetting {
@@ -50,11 +55,4 @@ body {
 
 .bg-bumbotron {
     background: rgba(68, 68, 68, 0.6);
-}
-
-.bootstrapbg {
-    /* background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url("https://getbootstrap.com/docs/4.2/assets/brand/bootstrap-solid.svg") no-repeat center center; */
-    /* background-size: 20%; */
-    background-color: rgb(255, 169, 39);
-    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9));
 }
