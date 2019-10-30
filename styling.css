@@ -18,6 +18,7 @@ html {
 body {
     position: relative;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 #navButton {
@@ -63,7 +64,10 @@ body {
 }
 
 #endlessgif {
-    width: 60%;
+    height: 100%;
+    max-width: 35vw;
+    width: auto;
+    object-fit: cover;
 }
 
 .carousel-inner>.carousel-item>img {
