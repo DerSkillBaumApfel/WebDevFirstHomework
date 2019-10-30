@@ -35,10 +35,35 @@ body {
     position: absolute;
 }
 
+.animated {
+    animation-fill-mode: forwards !important;
+    -webkit-animation-fill-mode: forwards !important;
+}
+
+#wowstartdiv {
+    animation-duration: 3s;
+}
+
 #animatedstar {
     height: auto;
     transform: rotate(-90deg);
     max-width: 90%;
+}
+
+#animatedstar img {
+    width: 100%;
+}
+
+#dancegif {
+    width: 80%;
+}
+
+#motivationalgif {
+    width: 70%;
+}
+
+#endlessgif {
+    width: 60%;
 }
 
 .carousel-inner>.carousel-item>img {

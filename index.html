@@ -6,6 +6,7 @@
     <meta charset="utf-8">
 
     <title>Bootstrap Documentation</title>
+    <link rel="icon" href="https://getbootstrap.com/docs/4.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -14,12 +15,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- Animate Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <!-- Custom styles -->
     <link href="./styling.css" rel="stylesheet">
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
+<body data-spy="scroll" data-target=".navbar" data-offset="120">
     <header>
         <!-- Custom JavaScript (used for AOS init in this case)-->
         <script src="./script.js"></script>
@@ -62,7 +66,7 @@
                         <a class="nav-link" href="#alertinfosection" aria-label="alert documentation section">Alert</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#badgeinfosection" aria-label="badge documentation section">Badge</a>
+                        <a class="nav-link" href="#mediainfosection" aria-label="media documentation section">Media</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#cardinfosection" aria-label="card documentation section">Card</a>
@@ -83,7 +87,7 @@
                         <a class="nav-link" href="#listgroupinfosection" aria-label="list group documentation section">List group</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#popoverinfosection" aria-label="popover documentation section">Popover</a>
+                        <a class="nav-link" href="#badgeinfosection" aria-label="badge documentation section">Badge</a>
                     </li>
                 </ul>
             </div>
@@ -107,7 +111,7 @@
                             <a class="nav-link" href="#alertinfosection" aria-label="alert documentation section">Alert</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#badgeinfosection" aria-label="badge documentation section">Badge</a>
+                            <a class="nav-link" href="#mediainfosection" aria-label="media documentation section">Media</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#cardinfosection" aria-label="card documentation section">Card</a>
@@ -128,7 +132,7 @@
                             <a class="nav-link" href="#listgroupinfosection" aria-label="list group documentation section">List group</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#popoverinfosection" aria-label="popover documentation section">Popover</a>
+                            <a class="nav-link" href="#badgeinfosection" aria-label="badge documentation section">Badge</a>
                         </li>
                     </ul>
                 </div>
@@ -140,10 +144,10 @@
         <div class="container-fluid overflow-x-hidden">
             <section id="generalinfo" class="row">
                 <div class="col-12">
-                    <h1> Bootstrap Documentation Highlights</h1>
+                    <h1 class="animated lightSpeedIn"> Bootstrap Documentation Highlights</h1>
                 </div>
 
-                <div class="col">
+                <div class="col animated lightSpeedIn">
                     Here are my top 10 favorite bootstrap components EVAAAAAAAAR! UwU
                 </div>
             </section>
@@ -222,7 +226,7 @@
             <section class="row mt-3 no-gutters border-top border-bottom border-secondary" data-aos="fade-up" id="alertinfosection">
 
                 <div class="col backgroundimage" id="animatedstar">
-                    <img width="100%" data-aos="fade-up-right" data-aos-duration="500" data-aos-offset="300" src="https://image.flaticon.com/icons/svg/1809/1809734.svg" alt="bg stars">
+                    <img data-aos="fade-up-right" data-aos-duration="500" data-aos-offset="300" src="https://image.flaticon.com/icons/svg/1809/1809734.svg" alt="bg stars">
                 </div>
 
                 <div class="col-lg-4 col-xl-3 pr-3" data-aos="fade-up-right">
@@ -231,12 +235,11 @@
 
                 <div class="col-lg-8" data-aos="fade-up-left">
                     <p class="mt-3">
-                        Alerts are used to highligh text. They have standard colors assigned to them. Bootstrap contains 8 different alerts per default. For a full enumeration, take a look at the list below:
+                        Alerts are used to highlight text. They have standard colors assigned to them. Bootstrap contains 8 different alerts per default. For a full enumeration, take a look at the list below:
 
                         <p>
                             <div class="card mb-3 bg-light">
                                 <div class="card-body">
-                                    <!-- <div class="border shadow bg-dark rounded p-2 pb-0 mb-3 border-secondary"> -->
                                     <div class="alert alert-primary " role="alert">
                                         A simple primary alert—check it out!
                                     </div>
@@ -261,57 +264,51 @@
                                     <div class="alert alert-dark" role="alert">
                                         A simple dark alert—check it out!
                                     </div>
-                                    <!-- </div> -->
                                 </div>
                             </div>
                 </div>
             </section>
 
-            <!-- Badge info -->
-            <section class="row mt-3 no-gutters border-top border-bottom border-secondary" data-aos="fade-up" id="badgeinfosection">
+            <!-- Media info -->
+            <section class="row mt-3 no-gutters border-top border-bottom border-secondary" data-aos="fade-up" id="mediainfosection">
 
                 <div class="col-lg-4 col-xl-3 pr-3" data-aos="fade-up-right">
-                    <h2 class="d-inline"> The badge component:</h2>
+                    <h2 class="d-inline"> The media component:</h2>
                 </div>
 
                 <div class="col-lg-8" data-aos="fade-up-left">
                     <p class="mt-3">
-                        Badges can be used for many purposes. Often they display new notifications, but they also work inside buttons, or can serve as tags.
-                        <p>
+                        Media is a very good way to tell your audience something in a quick way.
 
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-0">A picture is worth a thousand words.</p>
+                            <footer class="blockquote-footer">Some <cite title="Possible authors"> <a href="https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words">smart person</a></cite> before my time</footer>
+                        </blockquote>
+
+                        The media object helps build complex and repetitive components where some media is positioned alongside content that doesn’t wrap around said media. Plus, it does this with only two required classes thanks to flexbox. Below is an example of a single media
+                        object. Only two classes are required—the wrapping .media and the .media-body around your content. Optional padding and margin can be controlled through spacing utilities.
+
+
+                        <p>
                             <div class="card mb-3 bg-light">
                                 <div class="card-body">
-                                    <h1>Example heading <span class="badge badge-secondary">New</span></h1>
-                                    <h2 class="pt-0">Example heading <span class="badge badge-secondary">New</span></h2>
-                                    <h3>Example heading <span class="badge badge-secondary">New</span></h3>
-                                    <h4>Example heading <span class="badge badge-secondary">New</span></h4>
-                                    <h5>Example heading <span class="badge badge-secondary">New</span></h5>
-                                    <h6>Example heading <span class="badge badge-secondary">New</span></h6>
-                                </div>
-                            </div>
+                                    <div class="media">
+                                        <img id="endlessgif" src="https://media.giphy.com/media/3o7aCZDlmQZLe4Q4V2/giphy.gif" class="mr-3" alt="stunning endless gif">
+                                        <div class="media-body">
+                                            <h5 class="mt-0">Media heading</h5>
+                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
-                            Badges scale to match the size of the immediate parent element by using relative font sizing and <code class="highlighter-rouge">em</code> units. Media is used to present imagery and videos of all sorts. In contrary to the
-                            Carousel it contains only one element, and is not a slideshow. But headings and descriptive text are also supported by bootstrap.
-                            <p>
-                                <div class="card mb-3 bg-light">
-                                    <div class="card-body">
-                                        <button type="button" data-target="#motivationimage" class="btn btn-primary" data-toggle="collapse">
-                                        Hey! Click me! <span class="badge badge-light"> :D </span>
-                                          </button>
+                                            <div class="animated fadeInUp" id="wowstartdiv">
+                                                <div class="animated infinite heartBeat delay-3s">
+                                                    <h2 class="display-3 text-center"> WOW </h2>
 
-
-                                        <div class="card mb-3 bg-light collapse mt-2" id="motivationimage">
-                                            <div class="card-body">
-                                                <img class="d-block mx-auto" width="80%" src="http://giphygifs.s3.amazonaws.com/media/7TM8kWy04HzcA/giphy.gif" alt="uplifting dance gif">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <p>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                    sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                                    et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </div>
             </section>
 
@@ -333,9 +330,9 @@
                                     <div class="card mb-3 bg-dark">
                                         <div class="card-body">
                                             <div class="media">
-                                                <img width="70%" src="https://media.giphy.com/media/1oKIP5NfWhSGaeWlEP/giphy.gif" class="mr-3" alt="A very motivational dog gif">
-                                                <div class="media-body text-light">
-                                                    <h5 class="mt-0">O M G</h5>
+                                                <img id="motivationalgif" src="https://media.giphy.com/media/1oKIP5NfWhSGaeWlEP/giphy.gif" class="mr-3" alt="A very motivational dog gif">
+                                                <div class="media-body text-light text-center">
+                                                    <h5 class="mt-0 animated infinite tada">O M G</h5>
                                                     Are you impressed yet? &#129299; </div>
                                             </div>
                                         </div>
@@ -410,9 +407,6 @@
                                             <div class="spinner-border text-info" role="status">
                                                 <span class="sr-only">Loading...</span>
                                             </div>
-                                            <!-- <div class="spinner-border text-light" role="status">
-                                        <span class="sr-only">Loading...</span>
-                                    </div> -->
                                             <div class="spinner-border text-dark" role="status">
                                                 <span class="sr-only">Loading...</span>
                                             </div>
@@ -456,7 +450,7 @@
                                     <p>
                                         Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.
                                         <div class="card mb-3 bg-light">
-                                            <div class="card-body">
+                                            <div class="card-body text-center">
                                                 <button class="btn btn-primary" type="button" disabled>
                                                             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                                             <span class="sr-only">Loading...</span>
@@ -571,7 +565,9 @@
                             </div>
 
                             <p>
-                                A lightweight, flexible component that can optionally extend the entire viewport to showcase key marketing messages on your site. To make the jumbotron full width, and without rounded corners, add the <code class="highlighter-rouge">.jumbotron-fluid</code>                                modifier class and add a <code class="highlighter-rouge">.container</code> or <code class="highlighter-rouge">.container-fluid</code> within. </div>
+                                A lightweight, flexible component that can optionally extend the entire viewport to showcase key marketing messages on your site. To make the jumbotron full width, and without rounded corners, add the <code class="highlighter-rouge">.jumbotron-fluid</code>                                modifier class and add a <code class="highlighter-rouge">.container</code> or <code class="highlighter-rouge">.container-fluid</code> within.
+
+                </div>
             </section>
 
             <!-- Form info -->
@@ -585,7 +581,7 @@
                     <p class="mt-3">
 
                         Forms are useful to collect valuable data from users, so one can sell it to dubious companies later because of financial reasons. But wait! There's more... Some great starter questions for a real life conversation are: "What is the name of your dog?",
-                        "Where are you from and in which street do your parents live?", "What was your first flight destionation?",... There are so many interesting things to ask, so you don't even have to learn HTML to scam someone! Great news! :D
+                        "Where are you from and in which street do your parents live?", "What was your first flight destination?",... There are so many interesting things to ask, so you don't even have to learn HTML to scam someone! Great news! :D
                         <p>
                             So please feel free to fill out this form. No pressure though.
                             <p>
@@ -610,7 +606,7 @@
                                                 <input type="password" class="form-control" id="examplePin" placeholder="1234">
                                             </div>
                                             <div class="form-group">
-                                                <label for="exampleFormControlFile1">ID Card Scan</label>
+                                                <label for="examplescan">ID Card Scan</label>
                                                 <input type="file" class="form-control-file" id="examplescan">
                                             </div>
                                             <a href="#forminfosection" class="btn btn-primary" role="button">Submit</a>
@@ -642,8 +638,8 @@
                 <div class="col-lg-8" data-aos="fade-up-left">
                     <p class="mt-3">
 
-                        Cards are used to display information in a fancy container. You might have noticed, that I used them for every example on the way here. Go take a look at them, they are beautiful! So here we go... next you will see a dark card containing a gif, placed
-                        inside a light card. How awesome!
+                        With list groups, lists can be displayed in a fancy manner. They can be organized in a horizontal, "blocky" way, or in classic vertical style. The most basic list group is an unordered list with list items and the proper classes. Build upon it with the
+                        options that follow, or with your own CSS as needed.
                         <p>
                             <div class="card mb-3 bg-light">
                                 <div class="card-body">
@@ -658,71 +654,82 @@
                             </div>
 
                             <p>
-                                A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels,
-                                wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
-                                <div class="card mb-3 bg-light">
-                                    <div class="card-body">
-                                        <ul class="list-group">
-                                            <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
-                                            <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
-                                            <li class="list-group-item list-group-item-success">A simple success list group item</li>
-                                            <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
-                                            <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
-                                            <li class="list-group-item list-group-item-info">A simple info list group item</li>
-                                            <li class="list-group-item list-group-item-light">A simple light list group item</li>
-                                            <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                Add <code class="highlighter-rouge">.active</code> to a <code class="highlighter-rouge">.list-group-item</code> to indicate the current active selection.
+                                <p>
+                                    Add <code class="highlighter-rouge">.disabled</code> to a <code class="highlighter-rouge">.list-group-item</code> to make it <em>appear</em> disabled. Note that some elements with <code class="highlighter-rouge">.disabled</code>                                    will also require custom JavaScript to fully disable their click events (e.g., links).
+                                    <p>
+                                        Use <code class="highlighter-rouge">&lt;a&gt;</code>s or <code class="highlighter-rouge">&lt;button&gt;</code>s to create <em>actionable</em> list group items with hover, disabled, and active states by adding
+                                        <code class="highlighter-rouge">.list-group-item-action</code>. We separate these pseudo-classes to ensure list groups made of non-interactive elements (like <code class="highlighter-rouge">&lt;li&gt;</code>s or
+                                        <code class="highlighter-rouge">&lt;div&gt;</code>s) don’t provide a click or tap affordance.
+                                        <p>
+                                            Be sure to <strong>not use the standard <code class="highlighter-rouge">.btn</code> classes here</strong>.
+
+
+                                            <div class="card mb-3 bg-light">
+                                                <div class="card-body">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+                                                        <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+                                                        <li class="list-group-item list-group-item-success">A simple success list group item</li>
+                                                        <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+                                                        <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+                                                        <li class="list-group-item list-group-item-info">A simple info list group item</li>
+                                                        <li class="list-group-item list-group-item-light">A simple light list group item</li>
+                                                        <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
 
                 </div>
             </section>
 
-            <!-- Popover info -->
-            <section class="row mt-3 no-gutters border-top border-bottom border-secondary" data-aos="fade-up" id="popoverinfosection">
+            <!-- Badge info -->
+            <section class="row mt-3 no-gutters border-top border-bottom border-secondary" data-aos="fade-up" id="badgeinfosection">
 
                 <div class="col-lg-4 col-xl-3 pr-3" data-aos="fade-up-right">
-                    <h2 class="d-inline"> The popver component:</h2>
+                    <h2 class="d-inline"> The badge component:</h2>
                 </div>
 
                 <div class="col-lg-8" data-aos="fade-up-left">
                     <p class="mt-3">
-
-                        Cards are used to display information in a fancy container. You might have noticed, that I used them for every example on the way here. Go take a look at them, they are beautiful! So here we go... next you will see a dark card containing a gif, placed
-                        inside a light card. How awesome!
+                        Badges can be used for many purposes. Often they display new notifications, but they also work inside buttons, or can serve as tags.
                         <p>
+
                             <div class="card mb-3 bg-light">
                                 <div class="card-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Cras justo odio</li>
-                                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                                        <li class="list-group-item">Morbi leo risus</li>
-                                        <li class="list-group-item">Porta ac consectetur ac</li>
-                                        <li class="list-group-item">Vestibulum at eros</li>
-                                    </ul>
+                                    <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+                                    <h2 class="pt-0">Example heading <span class="badge badge-secondary">New</span></h2>
+                                    <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+                                    <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+                                    <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+                                    <h6>Example heading <span class="badge badge-secondary">New</span></h6>
                                 </div>
                             </div>
 
+                            Badges scale to match the size of the immediate parent element by using relative font sizing and <code class="highlighter-rouge">em</code> units. Media is used to present imagery and videos of all sorts. In contrary to the
+                            Carousel it contains only one element, and is not a slideshow. But headings and descriptive text are also supported by bootstrap.
                             <p>
-                                A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels,
-                                wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
                                 <div class="card mb-3 bg-light">
                                     <div class="card-body">
-                                        <ul class="list-group">
-                                            <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
-                                            <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
-                                            <li class="list-group-item list-group-item-success">A simple success list group item</li>
-                                            <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
-                                            <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
-                                            <li class="list-group-item list-group-item-info">A simple info list group item</li>
-                                            <li class="list-group-item list-group-item-light">A simple light list group item</li>
-                                            <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
-                                        </ul>
+                                        <button type="button" data-target="#motivationimage" class="btn btn-primary" data-toggle="collapse">
+                                                        Hey! Click me! <span class="badge badge-light"> :D </span>
+                                                          </button>
+
+                                        <div class="card mb-3 bg-light collapse mt-2" id="motivationimage">
+                                            <div class="card-body text-center">
+                                                <img id="dancegif" class="img-fluid" src="http://giphygifs.s3.amazonaws.com/media/7TM8kWy04HzcA/giphy.gif" alt="uplifting dance gif">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <p>
+                                    Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a visual cue as to their purpose, these users will simply be presented with the content
+                                    of the badge. Depending on the specific situation, these badges may seem like random additional words or numbers at the end of a sentence, link, or button. Unless the context is clear, consider including additional
+                                    context with a visually hidden piece of additional text.
                 </div>
             </section>
+
         </div>
     </main>
 </body>
